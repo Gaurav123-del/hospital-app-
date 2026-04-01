@@ -18,7 +18,6 @@ class _SignupPageState extends State<SignupPage> {
       backgroundColor: const Color(0xffF3F6FB),
       body: Stack(
         children: [
-
           // 🔵 TOP GRADIENT HEADER
           Container(
             height: 270,
@@ -37,7 +36,6 @@ class _SignupPageState extends State<SignupPage> {
               padding: const EdgeInsets.only(top: 60),
               child: Column(
                 children: [
-
                   // ✅ LOGO ADDED HERE
                   Image.asset(
                     "assets/images/logo.png",
@@ -57,10 +55,7 @@ class _SignupPageState extends State<SignupPage> {
 
                   const Text(
                     "Doctor Registration",
-                    style: TextStyle(
-                      color: Colors.white70,
-                      fontSize: 15,
-                    ),
+                    style: TextStyle(color: Colors.white70, fontSize: 15),
                   ),
                 ],
               ),
@@ -76,8 +71,7 @@ class _SignupPageState extends State<SignupPage> {
               padding: const EdgeInsets.symmetric(horizontal: 24),
               decoration: const BoxDecoration(
                 color: Colors.white,
-                borderRadius:
-                    BorderRadius.vertical(top: Radius.circular(50)),
+                borderRadius: BorderRadius.vertical(top: Radius.circular(50)),
               ),
               child: SingleChildScrollView(
                 child: Column(
@@ -102,8 +96,9 @@ class _SignupPageState extends State<SignupPage> {
                     const SizedBox(height: 15),
 
                     buildInput(
-                        hint: "Hospital Name",
-                        icon: Icons.local_hospital),
+                      hint: "Hospital Name",
+                      icon: Icons.local_hospital,
+                    ),
                     const SizedBox(height: 15),
 
                     buildInput(hint: "Gmail", icon: Icons.email),
@@ -163,16 +158,14 @@ class _SignupPageState extends State<SignupPage> {
                           Navigator.pushAndRemoveUntil(
                             context,
                             MaterialPageRoute(
-                              builder: (_) =>
-                                  const DoctorDashboard(),
+                              builder: (_) => const DoctorDashboard(),
                             ),
                             (route) => false,
                           );
                         },
                         child: const Text(
                           "Create Account",
-                          style:
-                              TextStyle(fontSize: 16, color: Colors.white),
+                          style: TextStyle(fontSize: 16, color: Colors.white),
                         ),
                       ),
                     ),

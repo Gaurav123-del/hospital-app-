@@ -9,11 +9,8 @@ class PatientReferralForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff9DA5B5),
-
       body: Stack(
         children: [
-
-          /// 🔥 SOFT BACKGROUND
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -29,13 +26,11 @@ class PatientReferralForm extends StatelessWidget {
 
           Column(
             children: [
-
-              /// 🔵 PREMIUM TOP HEADER
+              /// 🔵 HEADER WITH BACK BUTTON
               Container(
                 height: 180,
                 width: double.infinity,
-                padding:
-                    const EdgeInsets.only(top: 60, left: 20, right: 20),
+                padding: const EdgeInsets.only(top: 60, left: 10, right: 20),
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
@@ -43,52 +38,54 @@ class PatientReferralForm extends StatelessWidget {
                       Color.fromARGB(255, 136, 143, 153),
                     ],
                   ),
-                  borderRadius:
-                      BorderRadius.vertical(bottom: Radius.circular(40)),
-                ),
-                child: const Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "Patient Referral Form",
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  borderRadius: BorderRadius.vertical(
+                    bottom: Radius.circular(40),
                   ),
+                ),
+                child: Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: const Icon(
+                        Icons.arrow_back_ios_new,
+                        color: Colors.white,
+                      ),
+                    ),
+
+                    const SizedBox(width: 6),
+
+                    const Expanded(
+                      child: Text(
+                        "Patient Referral Form",
+                        style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
 
-              /// ⭐ FORM AREA
               Expanded(
                 child: SingleChildScrollView(
                   padding: const EdgeInsets.all(18),
                   child: GlassFormCard(
                     child: Column(
                       children: [
-
-                        GlassInput(
-                          "Disease / Injury",
-                          Icons.medical_services,
-                        ),
+                        GlassInput("Disease / Injury", Icons.medical_services),
                         const SizedBox(height: 18),
 
-                        GlassInput(
-                          "Blood Pressure",
-                          Icons.favorite,
-                        ),
+                        GlassInput("Blood Pressure", Icons.favorite),
                         const SizedBox(height: 18),
 
-                        GlassInput(
-                          "Oxygen Level",
-                          Icons.air,
-                        ),
+                        GlassInput("Oxygen Level", Icons.air),
                         const SizedBox(height: 18),
 
-                        GlassInput(
-                          "Heart Rate",
-                          Icons.monitor_heart,
-                        ),
+                        GlassInput("Heart Rate", Icons.monitor_heart),
                         const SizedBox(height: 18),
 
                         GlassInput(
@@ -104,8 +101,7 @@ class PatientReferralForm extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (_) =>
-                                    const AIReferralResultScreen(),
+                                builder: (_) => const AIReferralResultScreen(),
                               ),
                             );
                           },
@@ -123,7 +119,6 @@ class PatientReferralForm extends StatelessWidget {
   }
 }
 
-/// ⭐ BIG GLASS FORM CONTAINER
 class GlassFormCard extends StatelessWidget {
   final Widget child;
   const GlassFormCard({required this.child, super.key});
@@ -148,7 +143,6 @@ class GlassFormCard extends StatelessWidget {
   }
 }
 
-/// ⭐ GLASS INPUT (TALLER LIKE PHONE UI)
 class GlassInput extends StatelessWidget {
   final String hint;
   final IconData icon;
@@ -164,8 +158,7 @@ class GlassInput extends StatelessWidget {
         child: TextField(
           style: const TextStyle(fontSize: 15),
           decoration: InputDecoration(
-            contentPadding:
-                const EdgeInsets.symmetric(vertical: 22),
+            contentPadding: const EdgeInsets.symmetric(vertical: 22),
             hintText: hint,
             prefixIcon: Icon(icon, color: const Color(0xff536E97)),
             filled: true,
@@ -181,7 +174,6 @@ class GlassInput extends StatelessWidget {
   }
 }
 
-/// 🔵 PREMIUM BUTTON
 class GlassButton extends StatelessWidget {
   final String text;
   final VoidCallback onTap;
@@ -195,8 +187,7 @@ class GlassButton extends StatelessWidget {
       height: 58,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor:
-              const Color.fromARGB(255, 83, 110, 151),
+          backgroundColor: const Color.fromARGB(255, 83, 110, 151),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(22),
           ),

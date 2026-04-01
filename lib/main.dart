@@ -10,9 +10,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: StartPage(),
+      theme: ThemeData(
+        fontFamily: 'BookmanOldStyle',
+      ),
+      home: const StartPage(),
     );
   }
 }

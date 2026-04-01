@@ -8,10 +8,12 @@ environment:
   sdk: ^3.8.1
 
 dependencies:
-  video_player: ^2.9.2
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
+  video_player: ^2.9.2
+  url_launcher: ^6.3.0
+  google_maps_flutter: ^2.6.0
 
 dev_dependencies:
   flutter_test:
@@ -22,13 +24,25 @@ flutter:
   uses-material-design: true
 
   assets:
-     - assets/images/smart_referral.png
-     - assets/images/facility_check.png
-     - assets/images/risk_analysis.png
-     - assets/images/workflow.png
-     - assets/images/doctor.png
-     - assets/images/logo.png
-     - assets/images/bg_shape.png
-     - assets/images/doctor.png
-     - assets/images/doctorni.png
-     - assets/videos/intro.mp4
+    - assets/images/smart_referral.png
+    - assets/images/facility_check.png
+    - assets/images/risk_analysis.png
+    - assets/images/workflow.png
+    - assets/images/doctor.png
+    - assets/images/logo.png
+    - assets/images/bg_shape.png
+    - assets/images/bg.png
+    - assets/images/doctorni.png
+    - assets/videos/intro.mp4
+
+  fonts:
+    - family: BookmanOldStyle
+      fonts:
+        - asset: assets/fonts/BOOKOS.TTF
+        - asset: assets/fonts/BOOKOSB.TTF
+        - asset: assets/fonts/CascadiaMono.ttf
+        - asset: assets/fonts/Candaral.ttf
+
+
+
+        

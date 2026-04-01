@@ -18,7 +18,6 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: const Color(0xffF3F6FB),
       body: Stack(
         children: [
-
           /// 🔵 TOP GRADIENT HEADER (MATCHED WITH SIGNUP)
           Container(
             height: 270,
@@ -38,7 +37,6 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-
                   /// ✅ LOGO
                   Image.asset(
                     "assets/images/logo.png",
@@ -78,8 +76,9 @@ class _LoginPageState extends State<LoginPage> {
               padding: const EdgeInsets.symmetric(horizontal: 24),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius:
-                    const BorderRadius.vertical(top: Radius.circular(50)),
+                borderRadius: const BorderRadius.vertical(
+                  top: Radius.circular(50),
+                ),
                 boxShadow: const [
                   BoxShadow(
                     color: Colors.black12,
@@ -182,8 +181,7 @@ class _LoginPageState extends State<LoginPage> {
                         },
                         child: const Text(
                           "Sign in",
-                          style:
-                              TextStyle(fontSize: 16, color: Colors.white),
+                          style: TextStyle(fontSize: 16, color: Colors.white),
                         ),
                       ),
                     ),
