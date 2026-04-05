@@ -121,7 +121,6 @@ class _ConsultationHeaderState extends State<ConsultationHeader> {
 }
 
 
-
 class _SearchBar extends StatelessWidget {
   const _SearchBar();
 
