@@ -60,7 +60,7 @@ class PatientReferralForm extends StatelessWidget {
                       child: Text(
                         "Patient Referral Form",
                         style: TextStyle(
-                          fontSize: 30,
+                          fontSize: 23,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                         ),

@@ -37,15 +37,15 @@ class _StartPageState extends State<StartPage> {
               children: [
                 Image.asset("assets/images/logo.png", height: 200),
                 const SizedBox(height: 6),
-                const Text(
-                  "Rural Referral AI",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1,
-                    color: Colors.white70,
-                  ),
-                ),
+                // const Text(
+                //   "Rural Referral AI",
+                //   style: TextStyle(
+                //     fontSize: 18,
+                //     fontWeight: FontWeight.bold,
+                //     letterSpacing: 1,
+                //     color: Colors.white70,
+                //   ),
+                // ),
               ],
             ),
             const SizedBox(height: 10),
@@ -78,12 +78,12 @@ class _StartPageState extends State<StartPage> {
                     image: "assets/images/workflow.png",
                     title: "Emergency",
                     subtitle:
-                        "Streamline referral decisions during critical situations",
+                        "Streamline referral decisions during critical ",
                   ),
                   OnboardPage(
                     image: "assets/images/doctor.png",
                     title: "Ready to Start",
-                    subtitle: "Begin AI powered rural referral support today",
+                    subtitle: "Begin AI powered rural referral support",
                   ),
                 ],
               ),
@@ -147,13 +147,13 @@ class OnboardPage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(image, height: 360, fit: BoxFit.contain),
+          Image.asset(image, height: 200, fit: BoxFit.contain),
           const SizedBox(height: 40),
           Text(
             title,
             textAlign: TextAlign.center,
             style: const TextStyle(
-              fontSize: 34,
+              fontSize: 25,
               fontWeight: FontWeight.bold,
               letterSpacing: 0.8,
               color: Colors.white,

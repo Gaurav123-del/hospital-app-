@@ -52,13 +52,13 @@ class AIReferralResultScreen extends StatelessWidget {
                           "AI Referral Results",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 30,
+                            fontSize: 24,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                       ],
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 30),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(28),
                       child: BackdropFilter(
@@ -98,7 +98,7 @@ class AIReferralResultScreen extends StatelessWidget {
                                   size: 32,
                                 ),
                               ),
-                              const SizedBox(width: 14),
+                              const SizedBox(width: 50),
                               const Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -113,13 +113,13 @@ class AIReferralResultScreen extends StatelessWidget {
                                       ),
                                     ),
                                     SizedBox(height: 4),
-                                    Text(
-                                      "AI recommends safest hospitals based on vitals",
-                                      style: TextStyle(
-                                        fontSize: 13,
-                                        color: Colors.black54,
-                                      ),
-                                    ),
+                                    // Text(
+                                    //   "AI recommends safest hospitals based on vitals",
+                                    //   style: TextStyle(
+                                    //     fontSize: 13,
+                                    //     color: Colors.black54,
+                                    //   ),
+                                    // ),
                                   ],
                                 ),
                               ),

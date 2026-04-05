@@ -45,7 +45,7 @@ class DoctorDetailsPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 30,
+                      fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -107,7 +107,7 @@ class DoctorDetailsPage extends StatelessWidget {
                                 CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Dr. Sanjay Gupta",
+                                "Dr. Ankita Gupta",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
@@ -117,7 +117,7 @@ class DoctorDetailsPage extends StatelessWidget {
                               Text("Neurosurgery"),
                               SizedBox(height: 4),
                               Text(
-                                "📍 New York, United States",
+                                "📍 Ludhiana, Punjab",
                                 style:
                                     TextStyle(color: Colors.grey),
                               ),
@@ -132,7 +132,7 @@ class DoctorDetailsPage extends StatelessWidget {
 
                   const SizedBox(height: 24),
 
-                  /// ⭐ STATS
+  
                   Row(
                     mainAxisAlignment:
                         MainAxisAlignment.spaceAround,

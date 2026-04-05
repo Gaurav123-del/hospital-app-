@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:rural_referral_app/screens/start_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const RuralReferralApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class RuralReferralApp extends StatelessWidget {
+  const RuralReferralApp({super.key});
 
   @override
   Widget build(BuildContext context) {

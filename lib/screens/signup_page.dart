@@ -20,7 +20,7 @@ class _SignupPageState extends State<SignupPage> {
         children: [
           // 🔵 TOP GRADIENT HEADER
           Container(
-            height: 270,
+            height: 320,
             width: double.infinity,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -33,13 +33,13 @@ class _SignupPageState extends State<SignupPage> {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.only(top: 60),
+              padding: const EdgeInsets.only(top: 20),
               child: Column(
                 children: [
                   // ✅ LOGO ADDED HERE
                   Image.asset(
                     "assets/images/logo.png",
-                    height: 90,
+                    height: 160,
                     fit: BoxFit.contain,
                   ),
 
@@ -66,7 +66,7 @@ class _SignupPageState extends State<SignupPage> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              height: MediaQuery.of(context).size.height * 0.75,
+              height: MediaQuery.of(context).size.height * 0.65,
               width: double.infinity,
               padding: const EdgeInsets.symmetric(horizontal: 24),
               decoration: const BoxDecoration(

@@ -20,7 +20,7 @@ class _LoginPageState extends State<LoginPage> {
         children: [
           /// 🔵 TOP GRADIENT HEADER (MATCHED WITH SIGNUP)
           Container(
-            height: 270,
+            height: 500,
             width: double.infinity,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -33,14 +33,14 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.only(top: 60),
+              padding: const EdgeInsets.only(top: 1),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   /// ✅ LOGO
                   Image.asset(
                     "assets/images/logo.png",
-                    height: 90,
+                    height: 120,
                     fit: BoxFit.contain,
                   ),
 
@@ -71,7 +71,7 @@ class _LoginPageState extends State<LoginPage> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              height: MediaQuery.of(context).size.height * 0.75,
+              height: MediaQuery.of(context).size.height * 0.55,
               width: double.infinity,
               padding: const EdgeInsets.symmetric(horizontal: 24),
               decoration: BoxDecoration(
